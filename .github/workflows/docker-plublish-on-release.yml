@@ -7,7 +7,7 @@ on:
 
 env:
   REGISTRY: ghcr.io
-  IMAGE_NAME: subtract-admin-dashboard   # <-- change to your image name (repo can differ)
+  IMAGE_NAME: release-please-demo   # <-- change to your image name (repo can differ)
 
 permissions:
   contents: read
