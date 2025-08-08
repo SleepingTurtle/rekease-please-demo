@@ -1,5 +1,20 @@
 # Changelog
 
+## [1.2.0](https://github.com/SleepingTurtle/rekease-please-demo/compare/v1.1.1...v1.2.0) (2025-08-08)
+
+
+### Features
+
+* Added docker publish ([b4dc765](https://github.com/SleepingTurtle/rekease-please-demo/commit/b4dc7655dbdff9f51334cd270789805a6cb86f13))
+* added dockerfile ([34dea9c](https://github.com/SleepingTurtle/rekease-please-demo/commit/34dea9c1658a0d83f46c665dea7f5548495cca23))
+* adding metadata action to docker build ([41272b2](https://github.com/SleepingTurtle/rekease-please-demo/commit/41272b2e6905446bd893eb821862960c5753b7e7))
+
+
+### Bug Fixes
+
+* env name change ([ba7f2e2](https://github.com/SleepingTurtle/rekease-please-demo/commit/ba7f2e28c8adc9dedd76c3cb9ce74d8adf7dff3e))
+* Updated image name ([defc4bd](https://github.com/SleepingTurtle/rekease-please-demo/commit/defc4bddfeda1af0c50836a69ff4b15cedb2c6df))
+
 ## [1.1.1](https://github.com/SleepingTurtle/rekease-please-demo/compare/v1.1.0...v1.1.1) (2025-08-08)
 
 
