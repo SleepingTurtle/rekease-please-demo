@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.1.0](https://github.com/SleepingTurtle/rekease-please-demo/compare/v1.0.0...v1.1.0) (2025-08-08)
+
+
+### Features
+
+* added a non-hello world line ([2a5741b](https://github.com/SleepingTurtle/rekease-please-demo/commit/2a5741bd784807446030253f0284cc30a1482638))
+
 ## 1.0.0 (2025-08-08)
 
 
