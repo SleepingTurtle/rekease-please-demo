@@ -68,7 +68,7 @@ jobs:
         id: meta
         uses: docker/metadata-action@v5
         with:
-          images: ghcr.io/${{ steps.repo.outputs.owner_lower }}/subtract-admin-dashboard
+          images: ghcr.io/${{ steps.repo.outputs.owner_lower }}/${{ env.IMAGE_NAME }}
           tags: |
             type=semver,pattern={{version}},source=event
             type=semver,pattern={{major}}.{{minor}},source=event
