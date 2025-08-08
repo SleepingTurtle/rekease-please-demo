@@ -64,20 +64,24 @@ jobs:
           username: ${{ github.actor }}
           password: ${{ secrets.GITHUB_TOKEN }}
 
-      # If you prefer docker/metadata-action, you can swap in here; this example keeps it manual.
+      - name: Docker metadata
+        id: meta
+        uses: docker/metadata-action@v5
+        with:
+          images: ghcr.io/${{ steps.repo.outputs.owner_lower }}/subtract-admin-dashboard
+          tags: |
+            type=semver,pattern={{version}},source=event
+            type=semver,pattern={{major}}.{{minor}},source=event
+            type=semver,pattern={{major}},source=event
+            type=raw,value=latest,enable={{is_default_branch}}
+
       - name: Build & push
         uses: docker/build-push-action@v5
         with:
           context: .
           push: true
-          # For multi-arch builds uncomment the next line:
-          # platforms: linux/amd64,linux/arm64
-          tags: ${{ steps.tags.outputs.tags }}
-          # Optional labels for provenance:
-          labels: |
-            org.opencontainers.image.source=${{ github.repository }}
-            org.opencontainers.image.version=${{ steps.v.outputs.version }}
-            org.opencontainers.image.revision=${{ github.sha }}
+          tags: ${{ steps.meta.outputs.tags }}
+          labels: ${{ steps.meta.outputs.labels }}
 
       - name: Generate summary
         run: |
