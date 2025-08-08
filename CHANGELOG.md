@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.1.1](https://github.com/SleepingTurtle/rekease-please-demo/compare/v1.1.0...v1.1.1) (2025-08-08)
+
+
+### Bug Fixes
+
+* non-hello world added line ([068b023](https://github.com/SleepingTurtle/rekease-please-demo/commit/068b0236f84a7f2d336e03863f9e40aa12166b36))
+
 ## [1.1.0](https://github.com/SleepingTurtle/rekease-please-demo/compare/v1.0.0...v1.1.0) (2025-08-08)
 
 
